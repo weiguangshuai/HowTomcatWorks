@@ -2,21 +2,20 @@ package ex03.pyrmont.connector.http;
 
 import ex03.pyrmont.ServletProcessor;
 import ex03.pyrmont.StaticResourceProcessor;
-
-import java.net.Socket;
-import java.io.OutputStream;
-import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
-
 import org.apache.catalina.util.RequestUtil;
 import org.apache.catalina.util.StringManager;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.Socket;
 
 /* this class used to be called HttpServer */
 
 /**
  * 第二章的HttpServer分出来的类
- * 主要功能是Request和Response对象
+ * 主要功能是创建Request和Response对象
  */
 public class HttpProcessor {
 
